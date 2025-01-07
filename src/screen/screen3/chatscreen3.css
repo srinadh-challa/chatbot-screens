@@ -1,0 +1,130 @@
+/* Luxurious Chat Screen Styles */
+.luxury-chat-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(120deg, #1d4ed8, #9333ea); /* Blue to Purple Gradient */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Header Section */
+  .luxury-chat-header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent header */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header-icon {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header-icon:hover {
+    transform: scale(1.5);
+  }
+  
+  /* Chat Body Section */
+  .luxury-chat-body {
+    flex-grow: 1;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1); /* Light overlay */
+    backdrop-filter: blur(8px);
+  }
+  
+  /* Message Bubble Styles */
+  .message-bubble {
+    max-width: 70%;
+    padding: 1rem;
+    border-radius: 15px;
+    line-height: 1.5;
+    font-size: 1rem;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  .message-bubble.user {
+    background-color: #2563eb; /* Bright Blue */
+    color: white;
+    margin-left: auto;
+  }
+  
+  .message-bubble.bot {
+    background-color: #f9fafb; /* Light Gray */
+    color: #1f2937; /* Dark Gray */
+    margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Section */
+  .luxury-chat-footer {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent footer */
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .chat-input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    color: #1f2937;
+  }
+  
+  .chat-input::placeholder {
+    color: #6b7280; /* Placeholder color */
+  }
+  
+  .chat-send-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #9333ea; /* Vibrant Purple */
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .chat-send-button:hover {
+    background-color: #7e22ce; /* Darker Purple */
+  }
+  
+  .exit-button-screen3{    
+    padding: 5px;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
